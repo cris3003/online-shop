@@ -1,0 +1,67 @@
+@host = http://localhost:3000
+
+
+###
+GET {{host}}/api/products
+Authorization: 
+
+###
+GET {{host}}/api/products/671b898069e5b9452f443789
+
+###
+GET {{host}}/api/products/dpt/electronica
+###
+GET {{host}}/api/products/available
+
+###
+GET {{host}}/api/products/price?min=100&max=200
+
+
+###
+POST {{host}}/api/products
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiNjcxZjhlMzY4YzFmODU2NDZhZWI2MjA1IiwidXN1YXJpb19yb2xlIjoicmVndWxhciIsImlhdCI6MTczMDEyMzM1MH0.lEAjFxdn-QmNnW_3a7V9tORIOiE3Q3V7TPbRRfa7HQI
+
+{
+    "name": "Grapadora",
+    "description": "grapa todo",
+    "department":"electronica",
+    "price": 35,
+    "stock": 11,
+    "available":false
+}
+
+###
+PUT {{host}}/api/products/
+
+###
+DELETE {{host}}/api/products/671b9070e5e9b59ac3ed6ad8
+
+
+//usuarios
+###
+POST {{host}}/api/users/register
+Content-Type: application/json
+
+{
+    "username": "Pepe",
+    "email": "pp@gmail.com",
+    "password": "12345"
+}
+
+###
+POST {{host}}/api/users/login
+Content-Type: application/json
+
+{
+    "email": "pp@gmail.com",
+    "password": "12345"
+}
+
+###
+PUT {{host}}/api/users/add/671f6f869abea95f68901d1f
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiNjcxZjhlMzY4YzFmODU2NDZhZWI2MjA1IiwidXN1YXJpb19yb2xlIjoicmVndWxhciIsImlhdCI6MTczMDEyMzM1MH0.lEAjFxdn-QmNnW_3a7V9tORIOiE3Q3V7TPbRRfa7HQI
+
+###
+GET {{host}}/api/users/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiNjcxZjhlMzY4YzFmODU2NDZhZWI2MjA1IiwidXN1YXJpb19yb2xlIjoicmVndWxhciIsImlhdCI6MTczMDEyMzM1MH0.lEAjFxdn-QmNnW_3a7V9tORIOiE3Q3V7TPbRRfa7HQI
