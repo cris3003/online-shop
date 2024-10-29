@@ -31,7 +31,7 @@ const login = async (req, res, next) => {
         return res.status(401).json({ message: ' Error en email y/o contraseña' });
     }
     res.json({
-        message: 'Login correcto',
+        message: 'Login perfecto 😃',
         token: createToken(user)
     });
 

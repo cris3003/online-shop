@@ -1,4 +1,4 @@
-@host = http://localhost:3000
+@host = https://online-shop-ruyx.onrender.com
 
 
 ###
@@ -20,7 +20,7 @@ GET {{host}}/api/products/price?min=100&max=200
 ###
 POST {{host}}/api/products
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiNjcxZjhlMzY4YzFmODU2NDZhZWI2MjA1IiwidXN1YXJpb19yb2xlIjoicmVndWxhciIsImlhdCI6MTczMDEyMzM1MH0.lEAjFxdn-QmNnW_3a7V9tORIOiE3Q3V7TPbRRfa7HQI
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiNjcyMGM1MDY4OTE2YjQ0ZWEyMmMwNTFjIiwidXN1YXJpb19yb2xlIjoicmVndWxhciIsImlhdCI6MTczMDIwMDg3OH0.AQdxnQ7sX6Usbguh_PjmdILy-ilZbZPOw0zZfrW1vfM
 
 {
     "name": "Grapadora",
@@ -44,8 +44,8 @@ POST {{host}}/api/users/register
 Content-Type: application/json
 
 {
-    "username": "Pepe",
-    "email": "pp@gmail.com",
+    "username": "Cris",
+    "email": "cris@gmail.com",
     "password": "12345"
 }
 
@@ -54,7 +54,7 @@ POST {{host}}/api/users/login
 Content-Type: application/json
 
 {
-    "email": "pp@gmail.com",
+    "email": "cris@gmail.com",
     "password": "12345"
 }
 
